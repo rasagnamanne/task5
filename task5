@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini E-Commerce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ShopNow</h1>
+    <p>Cart Items: <span id="cartCount">0</span></p>
+  </header>
+
+  <section>
+    <label for="filter">Filter by Category:</label>
+    <select id="filter" onchange="filterProducts()">
+      <option value="all">All</option>
+      <option value="clothing">Clothing</option>
+      <option value="electronics">Electronics</option>
+    </select>
+  </section>
+
+  <main id="productList"></main>
+
+  <script src="script.js"></script>
+</body>
+</html>
